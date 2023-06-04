@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vee's Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex">
+    <div class="wrapper">
+        <div class="head">
+            <h1 class="title">Quiz Game</h1>
+            <div id="question-track">
+                <em>You have <span id="question-left"></span> question to answer!</em>
+                <div class="score">
+                    <span id="correct-answer"></span>/<span id="total-question"></span>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <!-- choose category -->
+            <div id="choose-category">
+                <h2 id="category-header">Select question category</h2>
+                <ul>
+                    <li>Sport</li>
+                    <li>Geography</li>
+                    <li>Politics</li>
+                    <li>Art</li>
+                    <li>Animals</li>
+                    <li>Celebrities</li>
+                    <li>Music</li>
+                    <li>Any</li>
+                </ul>
+            </div>
+            <!-- after choosing category -->
+            <div id="que">
+                <h2 id="question">
+                    <span id="the-question">dndndn</span> 
+                    <br>
+                    <span id="category">dmdm</span>
+                </h2>
+            
+                <ul id="options">
+                    <!-- <li>1. Lorem ipsum dolor sit, amet consectetur adipisicing elit.,</li>
+                    <li>2. Non officiis minima nemo minus velit, incidunt consectetur quos accusamus quae fugit </li>
+                    <li>3. quidem tempora excepturi dolorum! Sunt ad dolorem et recusandae necessitatibus.</li>
+                    <li>4. quidem tempora excepturi dolorum! Sunt ad dolorem et recusandae necessitatibus.</li> -->
+                </ul>
+            </div>
+            
+            <div id="result">
+                <!-- <p><i class="fa fas-question"></i>Please, choose an answer!</p> -->
+                <!-- <p><i class="fa fas-times"></i>Incorrect answer! <small>Correct answer: </small>8</p> -->
+            </div>
+        </div>
+        <div class="footer">
+            <button id="select-category">Submit</button>
+            <button id="submit-answer">Submit</button>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
